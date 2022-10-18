@@ -1,0 +1,21 @@
+[
+  {
+    "_id": "c3c6bae1-f2b6-430a-96d4-eaddf5024311",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:3000",
+    "url": "localhost:4000/api/products",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-10-16T18:45:01.828Z",
+    "modified": "2022-10-16T21:26:27.519Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\":\"Jordan's 23\",\n  \"sizes\": [\"SM\", \"M\", \"L\"],\n  \"gender\":\"men\",\n  \"slug\":\"jordan_tennis\",\n  \"price\": 151.99\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]

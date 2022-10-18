@@ -1,0 +1,109 @@
+[
+  {
+    "_id": "d5411eec-5ea2-4d5d-be16-45c8d2c794ba",
+    "colId": "25047b97-6206-45ed-915e-5d4c7514337c",
+    "containerId": "",
+    "name": "/products",
+    "url": "localhost:4000/api/products",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2022-10-16T21:32:49.301Z",
+    "modified": "2022-10-18T01:36:24.368Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\":\"Jordan's 52\",\n  \"sizes\": [\"SM\", \"M\", \"L\"],\n  \"gender\":\"men\",\n  \"slug\":\"jordan_tennis52\",\n  \"price\": 151.99,\n  \"images\": [\n    \"http://image1.png\",\n    \"http://image2.png\"\n  ]\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "8068ae6f-669e-4cf8-9b8c-b31e8f1efe51",
+    "colId": "25047b97-6206-45ed-915e-5d4c7514337c",
+    "containerId": "",
+    "name": "/products",
+    "url": "localhost:4000/api/products",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2022-10-16T22:02:28.062Z",
+    "modified": "2022-10-18T01:06:36.920Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "limit",
+        "value": "1",
+        "isDisabled": true,
+        "isPath": false
+      },
+      {
+        "name": "offset",
+        "value": "0",
+        "isDisabled": true,
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "b1ea912a-ecac-46c0-9d7e-86ee7490ea46",
+    "colId": "25047b97-6206-45ed-915e-5d4c7514337c",
+    "containerId": "",
+    "name": "/products/:term",
+    "url": "localhost:4000/api/products/34614428-9895-4774-8873-105f39c2b1c2",
+    "method": "GET",
+    "sortNum": 30000,
+    "created": "2022-10-16T22:02:52.754Z",
+    "modified": "2022-10-18T02:14:29.108Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "8f0eef38-052e-43da-852d-14a604548f79",
+    "colId": "25047b97-6206-45ed-915e-5d4c7514337c",
+    "containerId": "",
+    "name": "/products",
+    "url": "localhost:4000/api/products/8b245d6d-66a9-4cde-8403-82b70afb50f1",
+    "method": "DELETE",
+    "sortNum": 40000,
+    "created": "2022-10-16T22:06:06.729Z",
+    "modified": "2022-10-18T01:41:26.566Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "4e3faaec-4dcd-4bd4-aa5e-6e03f7137df3",
+    "colId": "25047b97-6206-45ed-915e-5d4c7514337c",
+    "containerId": "",
+    "name": "/products",
+    "url": "localhost:4000/api/products/8b245d6d-66a9-4cde-8403-82b70afb50f1",
+    "method": "PATCH",
+    "sortNum": 50000,
+    "created": "2022-10-16T23:01:43.116Z",
+    "modified": "2022-10-18T01:38:01.499Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"price\": 200.99,\n  \"images\": [\n    \"https://image1.jpg\",\n    \"https://image2.jpg\",\n    \"https://image3.jpg\"\n  ]\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "8b7fa855-ca1e-4611-ac34-3e145a91eee1",
+    "colId": "25047b97-6206-45ed-915e-5d4c7514337c",
+    "containerId": "",
+    "name": "/seed",
+    "url": "localhost:4000/api/seed",
+    "method": "GET",
+    "sortNum": 60000,
+    "created": "2022-10-18T01:48:56.735Z",
+    "modified": "2022-10-18T01:49:15.293Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  }
+]
