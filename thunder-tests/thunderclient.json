@@ -27,7 +27,7 @@
     "method": "GET",
     "sortNum": 20000,
     "created": "2022-10-16T22:02:28.062Z",
-    "modified": "2022-10-18T01:06:36.920Z",
+    "modified": "2022-10-19T01:59:24.252Z",
     "headers": [],
     "params": [
       {
@@ -43,6 +43,23 @@
         "isPath": false
       }
     ],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "file",
+          "value": "",
+          "isDisabled": true
+        }
+      ],
+      "files": [
+        {
+          "name": "file",
+          "value": "..\\..\\..\\..\\Users\\JoeLi\\Desktop\\Formato Reseñas V3.docx"
+        }
+      ]
+    },
     "tests": []
   },
   {
@@ -104,6 +121,64 @@
     "modified": "2022-10-18T01:49:15.293Z",
     "headers": [],
     "params": [],
+    "tests": []
+  },
+  {
+    "_id": "8808883e-1589-4384-8e19-6202de067c24",
+    "colId": "25047b97-6206-45ed-915e-5d4c7514337c",
+    "containerId": "",
+    "name": "/files/product",
+    "url": "localhost:4000/api/files/product",
+    "method": "POST",
+    "sortNum": 70000,
+    "created": "2022-10-19T01:57:10.391Z",
+    "modified": "2022-10-19T02:22:13.180Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [],
+      "files": [
+        {
+          "name": "file",
+          "value": "..\\..\\..\\..\\Users\\JoeLi\\OneDrive\\Pictures\\arcane5.jpg"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "d5785c9d-1f39-4079-b376-6b28aef98bbf",
+    "colId": "25047b97-6206-45ed-915e-5d4c7514337c",
+    "containerId": "",
+    "name": "localhost:4000/api/files/product/:id",
+    "url": "localhost:4000/api/files/product/1473809-00-A_1_2000.jpg",
+    "method": "GET",
+    "sortNum": 80000,
+    "created": "2022-10-23T23:12:58.506Z",
+    "modified": "2022-10-25T00:30:09.687Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "c4ad5d20-4a0d-441d-8a59-0e27fa983fd1",
+    "colId": "25047b97-6206-45ed-915e-5d4c7514337c",
+    "containerId": "",
+    "name": "/auth/register",
+    "url": "localhost:4000/api/auth/register",
+    "method": "POST",
+    "sortNum": 90000,
+    "created": "2022-10-25T01:56:59.370Z",
+    "modified": "2022-10-25T02:13:17.483Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"email\":\"joe2l.liranzo@gmail.com\",\n  \"password\":\"Abcd123\",\n  \"full_name\": \"Joel Liranzo\"\n}",
+      "form": []
+    },
     "tests": []
   }
 ]
