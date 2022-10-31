@@ -1,8 +1,14 @@
+import { ApiProperty } from "@nestjs/swagger"
 import { IsEmail, IsString, Matches, MaxLength, MinLength } from "class-validator"
 
 export class LoginUserDto {
 	@IsString()
 	@IsEmail()
+	@ApiProperty({
+		example: 'Justyn.Zieme@gmail.com',
+		description: 'User Email',
+		uniqueItems: true
+	})
 	email:string
 
 	@IsString()
@@ -11,6 +17,11 @@ export class LoginUserDto {
 	@Matches(
 		/(?:(?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/, {
 		message: 'The password must have a Uppercase, lowercase letter and a number'
+	})
+	@ApiProperty({
+		example: 'PUO>AE~tp$,kB:o&pJ',
+		description: 'User Pasword',
+		uniqueItems: true
 	})
 	password:string	
 }

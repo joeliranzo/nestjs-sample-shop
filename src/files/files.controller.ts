@@ -1,12 +1,15 @@
 import { BadRequestException, Controller, Get, Param, Post, Res, UploadedFile, UseInterceptors } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { FileInterceptor } from '@nestjs/platform-express';
+import { ApiResponse, ApiTags } from '@nestjs/swagger';
 import { Response } from 'express';
 import { diskStorage } from 'multer';
+import { ProductImage } from 'src/products/entities';
 import { FilesService } from './files.service';
 import { fileNamer } from './helpers';
 import { fileFilter } from './helpers/fileFilter.helper';
 
+@ApiTags('Files')
 @Controller('files')
 export class FilesController {
 	constructor(
@@ -15,6 +18,9 @@ export class FilesController {
 		) {}
 
 	@Get('product/:imageName')
+	@ApiResponse({status:200, description: 'Ok'})
+	@ApiResponse({status:400, description: 'Bad Request'})
+	@ApiResponse({status:403, description: 'Forbidden. Token related'})	
 	findProductImage(
 		@Res() res: Response,
 		@Param('imageName') imageName:string
@@ -29,6 +35,9 @@ export class FilesController {
 	}
 
 	@Post('product')
+	@ApiResponse({status:201, description: 'file was created', type: ProductImage})
+	@ApiResponse({status:400, description: 'Bad Request'})
+	@ApiResponse({status:403, description: 'Forbidden. Token related'})
 	@UseInterceptors(FileInterceptor('file', {
 		fileFilter: fileFilter,
 		//limits: {fileSize: 1000}
