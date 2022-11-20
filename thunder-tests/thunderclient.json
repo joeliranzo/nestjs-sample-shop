@@ -194,12 +194,12 @@
     "method": "POST",
     "sortNum": 100000,
     "created": "2022-10-27T01:58:18.497Z",
-    "modified": "2022-10-29T03:16:08.337Z",
+    "modified": "2022-11-20T15:46:51.627Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"email\":\"test1@google.com\",\n  \"password\":\"Abcd1223\"\n}",
+      "raw": "{\n  \"email\":\"test2@google.com\",\n  \"password\":\"Abcd1223\"\n}",
       "form": []
     },
     "tests": []
@@ -238,6 +238,20 @@
       "type": "bearer",
       "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImE1MDdjYTA2LTc1ZGYtNGE1Mi1iYWI4LWM0Y2IwNDZmZjMzNyIsImlhdCI6MTY2NzAxMzM2OSwiZXhwIjoxNjY3MDIwNTY5fQ.eeg0EOkTXoha91tO3TBm7j2LiBEcE0Ac3qfQHe2Cmxs"
     },
+    "tests": []
+  },
+  {
+    "_id": "4286e462-57ba-4e10-a11b-f4e800363116",
+    "colId": "25047b97-6206-45ed-915e-5d4c7514337c",
+    "containerId": "",
+    "name": "/socket",
+    "url": "localhost:4000/socket.io/socket.io.js",
+    "method": "GET",
+    "sortNum": 120000,
+    "created": "2022-11-20T02:10:20.364Z",
+    "modified": "2022-11-20T02:10:50.832Z",
+    "headers": [],
+    "params": [],
     "tests": []
   }
 ]
